@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="81px" height="80px" viewBox="0 0 81 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>Logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop" sketch:type="MSArtboardGroup" transform="translate(-600.000000, -408.000000)">
+            <g id="Logotype" sketch:type="MSLayerGroup" transform="translate(444.864244, 415.000000)">
+                <g id="Logo" transform="translate(162.835295, 0.000000)">
+                    <rect id="Rectangle-51" stroke="#FBD542" stroke-width="7" fill="#333333" sketch:type="MSShapeGroup" x="0" y="0" width="65.9328981" height="65.9328981"></rect>
+                    <text id="M" sketch:type="MSTextLayer" font-family="Roboto" font-size="42.6232877" font-weight="420" fill="#FBD542">
+                        <tspan x="14.3187607" y="49.6619221">M</tspan>
+                    </text>
+                    <text id="2" sketch:type="MSTextLayer" font-family="Helvetica Neue" font-size="9.41898545" font-weight="normal" fill="#FBD542">
+                        <tspan x="50.7864084" y="25.9827162">2</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
