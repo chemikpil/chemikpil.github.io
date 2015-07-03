@@ -11,10 +11,29 @@ body {
 }
 
 .container {
-  padding-top: 350px;
-  
-  background: url(../img/texture.png) no-repeat top center;
-  background-size: 50%;
+    max-width: 420px;
+    margin: 0 auto;
+    padding-top: 190px;
+    
+    background: url(../img/texture.png) no-repeat top center;
+    background-size: 100%;
+}
+
+@media screen and (min-width: 640px) {
+    .container {
+      max-width: 640px;
+      padding-top: 350px;
+    }
+}
+
+.logo img {
+    width: 50px;
+}
+
+@media screen and (min-width: 640px) {
+    .logo img {
+        width: 80px;
+    }
 }
 
 .logo {
@@ -26,10 +45,11 @@ body {
 .logo h1 {
   margin: 0;
   
-  font-size: 4.9rem;
+  font-size: 3.4rem;
   font-weight: 300;
   text-transform: uppercase;
 }
+
 
 .logo h1 strong {
   font-weight: 700;
@@ -38,7 +58,7 @@ body {
 .logo h2 {
   margin: 0;
   
-  font-size: 2.65rem;
+  font-size: 1.7rem;
   font-weight: 300;
 }
 
@@ -46,9 +66,23 @@ body {
   margin: 35px 0 0;
   padding: 0;
   
-  font: 300 1.8rem 'Roboto', sans-serif;
+  font: 300 1.3rem 'Roboto', sans-serif;
   
   list-style: none;
+}
+
+@media screen and (min-width: 640px) {
+    .logo h1 {
+        font-size: 4.9rem;
+    }
+    
+    .logo h2 {
+        font-size: 2.65rem;
+    }
+    
+    .links {
+        font-size: 1.8rem;
+    }
 }
 
 .links li {
