@@ -69,8 +69,14 @@ body {
   }
   
   .container .content {
+    bottom: 30px
+  }
+}
+
+@media screen and (min-width: 640px) and (min-height: 700px) { 
+  .container .content {
     bottom: auto;
-    top: 360px;
+    top: 50%;
   }
 }
 
