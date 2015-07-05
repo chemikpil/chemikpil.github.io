@@ -139,3 +139,21 @@ body {
   color: #02a4cc;
   text-decoration: underline;
 }
+
+/* Animations */
+
+.container {
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+}
+
+.logo h2, 
+.logo img {
+  animation-duration: 1s;
+  animation-delay: 1s;
+}
+
+.links {
+  animation-duration: 1s;
+  animation-delay: 2s;
+}
