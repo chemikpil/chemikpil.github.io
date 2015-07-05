@@ -11,34 +11,70 @@ body {
 }
 
 .container {
-    max-width: 420px;
-    margin: 0 auto;
-    padding-top: 190px;
-    
-    background: url(../img/texture.png) no-repeat top center;
-    background-size: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 320px;
+  margin-left: -160px;
+  padding-top: 157px;
+
+  background: url(../img/texture.png) no-repeat center bottom 205px;
+  background-size: 100%;
 }
 
-@media screen and (min-width: 640px) {
-    .container {
-      max-width: 640px;
-      padding-top: 350px;
-    }
+.container .content {
+  width: 100%;
+  position: absolute;
+  bottom: 15px;
 }
 
 .logo img {
-    width: 50px;
+  width: 50px;
 }
 
-@media screen and (min-width: 640px) {
-    .logo img {
-        width: 80px;
-    }
-}
-
-.logo {
-  margin-top: 55px;
+@media screen and (min-width: 640px) and (min-height: 500px) {
+  .container {
+    width: 640px;
+    margin-left: -320px;
+    background-position: center bottom 269px;
+  }
   
+  .container .content {
+    top: auto;
+    bottom: 15px;
+  }
+}
+
+@media screen and (min-height: 370px) and (max-height: 500px) {
+  .container {
+    background-position: top center;
+  }
+  
+  .container .content {
+    bottom: auto;
+    top: 50%;
+  }
+}
+
+@media screen and (min-width: 640px) and (min-height: 500px) {
+  .logo img {
+    width: 80px;
+  }
+}
+
+@media screen and (min-width: 640px) and (min-height: 600px) {
+  .container {
+    background-position: top center;
+  }
+  
+  .container .content {
+    bottom: auto;
+    top: 360px;
+  }
+}
+
+.logo {  
   font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -63,7 +99,7 @@ body {
 }
 
 .links {
-  margin: 35px 0 0;
+  margin: 15px 0 0;
   padding: 0;
   
   font: 300 1.3rem 'Roboto', sans-serif;
@@ -71,18 +107,18 @@ body {
   list-style: none;
 }
 
-@media screen and (min-width: 640px) {
-    .logo h1 {
-        font-size: 4.9rem;
-    }
-    
-    .logo h2 {
-        font-size: 2.65rem;
-    }
-    
-    .links {
-        font-size: 1.8rem;
-    }
+@media screen and (min-width: 640px) and (min-height: 500px) {
+  .logo h1 {
+    font-size: 4.9rem;
+  }
+
+  .logo h2 {
+    font-size: 2.65rem;
+  }
+
+  .links {
+    font-size: 1.8rem;
+  }
 }
 
 .links li {
