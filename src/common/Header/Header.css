@@ -1,0 +1,52 @@
+.Header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 50px;
+
+    background-color: rgba(0,0,0,.9);
+}
+
+.Header__button {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    height: 50px;
+    padding: 0 20px;
+
+    border: 0;
+    outline: 0;
+
+    background-color: transparent;
+
+    color: var(--font-color-main);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    line-height: 50px;
+}
+
+.Header__menu {
+    position: fixed;
+    top: 50px;
+
+    width: 100%;
+    height: calc(100vh - 50px);
+
+    border-top: 1px solid rgba(67, 67, 67, .9);
+
+    background-color: rgba(0, 0, 0, .9);
+}
+
+.Header__loading {
+    padding: 20px 0;
+
+    text-align: center;
+    font-size: 1.6rem;
+}

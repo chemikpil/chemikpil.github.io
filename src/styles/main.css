@@ -1,0 +1,22 @@
+:root {
+    --font-color-main: #FFF;
+    --font-family-title: 'Anton', sans-serif;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    color: var(--font-color-main);
+    font-size: 1.6rem;
+    font-family: Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
