@@ -33,7 +33,7 @@ const City = memo(({ city }: CityType) => (
         <Suspense fallback={<p className='City__subtitle'>Loading ...</p>}>
             <div className='City__body'>
                 <h1 className='City__name'>{city.to}</h1>
-                {city.current && <p className="City__subtitle">{city.subtitle}</p>}
+                {city.subtitle && <p className="City__subtitle">{city.subtitle}</p>}
                 {city.current && <Timer start={city.timestamp} />}
                 <p className='City__date'>{city.start} - {city.end}</p>
             </div>
