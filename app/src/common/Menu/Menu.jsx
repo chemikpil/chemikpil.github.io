@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react';
 import MenuItem from './MenuItem';
 
 import history from '../../store/history';
+import incoming from '../../store/incoming'; 
 
 import './Menu.css';
 
@@ -25,7 +26,7 @@ class Menu extends PureComponent {
     );
 
     render () {
-        const current = [this.props.current];
+        const current = [this.props.current, ...incoming];
 
         return (
             <div className='Menu'>

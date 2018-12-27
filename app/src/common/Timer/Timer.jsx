@@ -19,6 +19,12 @@ class Timer extends Component<PropsType, StateType> {
         intervalID: null
     };
 
+    static getDerivedStateFromProps(props, state) {
+        return {
+            left: props.start - +new Date(),
+        };
+    };
+
     componentDidMount() {
         const intervalID = setInterval(this.incrementTimer, 1000);
 
