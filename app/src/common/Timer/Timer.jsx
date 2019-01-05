@@ -35,15 +35,12 @@ class Timer extends Component<PropsType, StateType> {
     componentDidMount() {
         const intervalID = setInterval(this.incrementTimer, 1000);
 
-        console.log('mount')
-
         this.setState({
             intervalID
         });
     };
 
     componentWillUnmount() {
-        console.log('unmount');
         clearInterval(this.state.intervalID);
     };
 
