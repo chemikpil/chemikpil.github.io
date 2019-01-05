@@ -13,6 +13,13 @@ type StateType = {
     intervalID: number
 };
 
+const nowTimer = {
+    sec: 0,
+    min: 0,
+    hours: 0,
+    days: 0
+};
+
 class Timer extends Component<PropsType, StateType> {
     state = {
         left: this.props.start - +new Date(),
@@ -28,12 +35,15 @@ class Timer extends Component<PropsType, StateType> {
     componentDidMount() {
         const intervalID = setInterval(this.incrementTimer, 1000);
 
+        console.log('mount')
+
         this.setState({
             intervalID
         });
     };
 
     componentWillUnmount() {
+        console.log('unmount');
         clearInterval(this.state.intervalID);
     };
 
@@ -57,7 +67,10 @@ class Timer extends Component<PropsType, StateType> {
     });
 
     render () {
-        const timer = this.getTimer(this.state.left);
+        const { left } = this.state;
+        const timer = left > 0 ? this.getTimer(left) : nowTimer;
+
+        console.log(left, timer);
 
         return(
             <div className='Timer'>

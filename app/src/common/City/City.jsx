@@ -34,7 +34,7 @@ const City = memo(({ city }: CityType) => (
             <div className='City__body'>
                 <h1 className='City__name'>{city.to}</h1>
                 {city.subtitle && <p className="City__subtitle">{city.subtitle}</p>}
-                {city.current && <Timer start={city.timestamp} />}
+                {city.current && <Timer start={city.timestamp} key={`timer-${city.id}`} />}
                 <p className='City__date'>{city.start} - {city.end}</p>
             </div>
         </Suspense>
