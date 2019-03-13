@@ -1,5 +1,15 @@
 const history = [
     {
+        id: 23,
+        name: 'livigno',
+        to: 'Livigno',
+        subtitle: 'Alpy siup siup za:',
+        start: '22.02',
+        end: '03.03.2019',
+        timestamp: 1550818800000,
+        current: false
+    },
+    {
         id: 22,
         name: 'spindleruv',
         to: 'Spindleruv Mlyn',

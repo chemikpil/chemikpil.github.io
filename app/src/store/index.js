@@ -1,11 +1,11 @@
 const data = {
-    id: 23,
-    name: 'livigno',
-    to: 'Livigno',
-    subtitle: 'Alpy siup siup za:',
-    start: '22.02',
-    end: '03.03.2019',
-    timestamp: 1550818800000,
+    id: 24,
+    name: 'luxembourg',
+    to: 'Luxembourg',
+    subtitle: 'Szkolenie na końcu wszystkiego za:',
+    start: '21.03',
+    end: '24.03.2019',
+    timestamp: 1553155200000,
     current: true
 };
 
