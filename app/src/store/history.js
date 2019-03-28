@@ -1,5 +1,15 @@
 const history = [
     {
+        id: 24,
+        name: 'luxembourg',
+        to: 'Luxembourg',
+        subtitle: 'Szkolenie na końcu wszystkiego za:',
+        start: '21.03',
+        end: '24.03.2019',
+        timestamp: 1553155200000,
+        current: false
+    },
+    {
         id: 23,
         name: 'livigno',
         to: 'Livigno',
